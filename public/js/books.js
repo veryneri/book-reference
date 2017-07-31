@@ -29,7 +29,9 @@ function addBook() {
 
 function addBookSuccess(response) {
 	console.log('addBookSuccess()');
-	console.log(response);
+	$('#add-book-form')[0].reset();
+	$addBookModal.modal('hide');
+	location.reload();
 }
 
 function addBookError(error) {
