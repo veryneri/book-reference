@@ -20,6 +20,9 @@ SET time_zone = "+00:00";
 -- Database: `book_reference`
 --
 
+CREATE DATABASE IF NOT EXISTS `book_reference`;
+USE `book_reference`;
+
 -- --------------------------------------------------------
 
 --
