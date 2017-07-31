@@ -5,7 +5,8 @@ class Book extends CI_Model
 
 	function create($book)
 	{
-		# code...
+		$this->db->insert($this->table, $book);
+		return $this->db->insert_id();
 	}
 
 	function retrieve($id)
