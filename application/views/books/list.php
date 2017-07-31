@@ -20,17 +20,19 @@
 				<th>Actions</th>
 			</thead>
 			<tbody>
+			<?php foreach ($books as $book): ?>
 				<tr>
-					<td>1</td>
-					<td>1234567890</td>
-					<td>CI Intro Course: Jr. Devs Training</td>
-					<td>Edson Neri</td>
-					<td>Programming</td>
-					<th>
+					<td><?php echo $book->id; ?></td>
+					<td><?php echo $book->isbn; ?></td>
+					<td><?php echo $book->title; ?></td>
+					<td><?php echo $book->author; ?></td>
+					<td><?php echo $book->category; ?></td>
+					<td>
 						<button class="btn btn-success" title="Edit"><i class="fa fa-fw fa-edit"></i></button>
 						<button class="btn btn-danger" title="Delete"><i class="fa fa-fw fa-times"></i></button>
-					</th>
+					</td>
 				</tr>
+			<? endforeach; ?>
 			</tbody>
 		</table>
 	</div>

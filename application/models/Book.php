@@ -11,12 +11,17 @@ class Book extends CI_Model
 
 	function retrieve($id)
 	{
-		# code...
+		$this->db->from($this->table);
+		$this->db->where('id', $id);
+		$query = $this->db->get();
+		return $query->row();
 	}
 
 	function retrieveAll()
 	{
-		# code...
+		$this->db->from($this->table);
+		$query = $this->db->get();
+		return $query->result();
 	}
 
 	function update($updated)
