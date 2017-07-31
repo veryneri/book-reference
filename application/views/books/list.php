@@ -42,7 +42,7 @@
 					<h3>Add book</h3>
 				</div>
 				<div class="modal-body form">
-					<form action="#" id="form" class="form-horizontal">
+					<form action="<?php echo base_url('books/create'); ?>" id="add-book-form" class="form-horizontal">
 						<div class="form-body">
 							<div class="form-group">
 								<label for="isbn" class="col-md-3">ISBN</label>
@@ -72,8 +72,8 @@
 					</form>
 				</div>
 				<div class="modal-footer">
-					<button class="btn btn-primary" id="save-book">Save</button>
-					<button class="btn btn-danger" id="cancel-book" data-dismiss="modal">Cancel</button>
+					<button class="btn btn-primary" id="save-book-btn">Save</button>
+					<button class="btn btn-danger" id="cancel-book-btn" data-dismiss="modal">Cancel</button>
 				</div>
 			</div>
 		</div>
